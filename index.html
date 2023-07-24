@@ -77,6 +77,28 @@
       bottom: 0;
       width: 100%;
     }
+
+    /* Media Query for Smaller Screens and Mobile Devices */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .vision-mission {
+        flex-direction: column; /* Change to a single column layout */
+        align-items: stretch; /* Stretch items to full width */
+      }
+
+      .vision,
+      .mission {
+        margin: 10px 0; /* Add some spacing between the mission and vision cards */
+        flex-basis: 100%; /* Make each card take up the full width */
+      }
+    }
   </style>
 </head>
 <body>
